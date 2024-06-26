@@ -1,0 +1,11 @@
+.direnv/
+
+.zig-cache/
+
+bin/
+
+pkg/
+
+zig-cache/
+
+zig-out/

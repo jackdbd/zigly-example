@@ -1,0 +1,18 @@
+.{
+    .name = "zigly-example",
+    .version = "0.0.0",
+    
+    .dependencies = .{
+        .zigly = .{
+            .url = "https://github.com/jedisct1/zigly/archive/refs/tags/0.1.8.tar.gz",
+            .hash = "1220797e667aa73b2e67a8fac47f0e8d227b865ddc8b45b6f8472c45c8a130cd961d",
+        },
+    },
+
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        "README.md",
+    },
+}

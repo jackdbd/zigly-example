@@ -1,0 +1,12 @@
+# This file describes a Fastly Compute package. To learn more visit:
+# https://www.fastly.com/documentation/reference/compute/fastly-toml
+
+authors = ["giacomo@giacomodebidda.com"]
+description = "Example to test zigly"
+language = "other"
+manifest_version = 3
+name = "zigly-example"
+service_id = "vtRZl5gdDmYk6GNaTRDR03"
+
+[scripts]
+build = "zig build -Doptimize=ReleaseSmall -Dtarget=wasm32-wasi && mkdir -p bin && cp zig-out/bin/*.wasm bin/main.wasm"
